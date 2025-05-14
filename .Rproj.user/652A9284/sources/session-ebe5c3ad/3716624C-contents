@@ -15,11 +15,7 @@ This guide demonstrates how to use Git, GitHub, and the command line interface f
 
 In R studio, click the 'File' option and create a new R project named 5513_Assignment2. In the new project add a new qmd file which can render into HTML file.
 
-
-This is how the rendered version would look like.
-
 ![](images/Screenshot%202025-05-14%20202259.png)
-
 
 This is how the rendered version would look like.
 
@@ -56,6 +52,4 @@ git commit -m "Initial commit"
 This will push the initialised folder into GitHub repository.
 
 ## STEP 3
-
-
 
