@@ -1,0 +1,20 @@
+---
+title: "git_guide"
+author: Richa Anghan
+format: 
+      html: default
+      pdf: default 
+editor: visual
+---
+
+# Introduction
+
+This guide demonstrates how to use Git, GitHub, and the command line interface for version control.
+
+## Step 1
+
+In R studio, click the 'File' option and create a new R project named 5513_Assignment2. In the new project add a new qmd file which can render into HTML file.
+
+
+
+This is how the rendered version would look like.
