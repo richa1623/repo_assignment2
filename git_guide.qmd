@@ -15,6 +15,42 @@ This guide demonstrates how to use Git, GitHub, and the command line interface f
 
 In R studio, click the 'File' option and create a new R project named 5513_Assignment2. In the new project add a new qmd file which can render into HTML file.
 
-
-
 This is how the rendered version would look like.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This is a conflicting change on the master branch.
