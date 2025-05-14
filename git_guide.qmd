@@ -15,11 +15,9 @@ This guide demonstrates how to use Git, GitHub, and the command line interface f
 
 In R studio, click the 'File' option and create a new R project named 5513_Assignment2. In the new project add a new qmd file which can render into HTML file.
 
-
 This is how the rendered version would look like.
 
 ![](images/Screenshot%202025-05-14%20202259.png)
-
 
 This is how the rendered version would look like.
 
@@ -53,9 +51,76 @@ git commit -m "Initial commit"
 
     git push -u origin master
 
-This will push the initialised folder into GitHub repository.
+This will push the initialized folder into GitHub repository.
 
 ## STEP 3
 
+Creating a new branch:
 
+-   Create and switch to a new branch:
 
+    git checkout -b testbranch
+
+-   Make some changes in the git_guide.qmd in Rstudio:
+
+    "This is a change on the testbranch."
+
+-   Stage and commit the changes:
+
+    git add git_guide.qmd
+
+    git commit -m "Updates on testbranch"
+
+    git push -u origin testbranch
+
+## STEP 4
+
+Add Data Folder and Amend Commit:
+
+-   Create a data folder and add your Assignment 1 data to it:
+
+    mkdir data
+
+    mv /path/to/assignment1/data/\* data/
+
+-   Amend the previous commit to include the data folder:
+
+    git add data/
+
+    git commit --amend --no-edit
+
+    git push -f origin testbranch
+
+## STEP 5
+
+Simulate a Merge Conflict:
+
+-   Switch back to the main branch:
+
+    git checkout main
+
+-   Modify example.qmd differently:
+
+    "This is a conflicting change on the main branch."
+
+-   Stage and commit:
+
+    git add example.qmd
+
+    git commit -m "Main branch conflicting change"
+
+    git push origin master
+
+-   Merge the changes from testbranch:
+
+    git merge testbranch
+
+-   Resolve the conflict in example.qmd by removing the markers and changes you donot wish to keep.
+
+-   Stage, commit, and push the resolved conflict:
+
+    git add example.qmd
+
+    git commit -m "Resolved merge conflict"
+
+    git push origin master
